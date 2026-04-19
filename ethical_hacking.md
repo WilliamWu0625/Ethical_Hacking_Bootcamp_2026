@@ -42,6 +42,7 @@ mv file2 folder1
 # copy file
 cp file3 file4
 cp file3 ..
+cp file3 /home/kali/Documents/
 cp file3 folder1/file5
 
 # remove file
@@ -53,4 +54,24 @@ rm -r *
 # create simple py file and run it: print("hello world")
 nano file5.py
 python3 file5.py
+```
+## Network Commands & Sudo Privileges in Kali
+```
+# root user, high privilege
+sudo touch rootFile
+sudo echo hello > rootFile
+
+# log in root user
+sudo su
+echo world > rootFile
+exit
+
+# edit by kali after copy
+cp rootFile kaliFile
+echo kali > kaliFile
+
+ifconfig
+# eth0 | wlan0 | lo
+# inet xxx.xxx.x.xx  local ip address, communicate over internet and changable, where you are
+# ether xx:xx:xx:xx:xx:xx  mac address, unique to communicate with machines on network, who you are
 ```
