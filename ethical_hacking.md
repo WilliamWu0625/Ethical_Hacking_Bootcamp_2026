@@ -75,3 +75,34 @@ ifconfig
 # inet xxx.xxx.x.xx  local ip address, communicate over internet and changable, where you are
 # ether xx:xx:xx:xx:xx:xx  mac address, unique to communicate with machines on network, who you are
 ```
+## Obtain IP Address, Physical Address Using Whois Tool
+### Use ping to get IP address
+```
+ping etf.bg.ac.rs
+# can see IP address, but PING is blocked by this website
+# ctrl-c: xx packets transmitted, 0 received, 100% packet loss, time xxxxms
+
+ping facebook.com
+# can see IP address (dynamic)
+# ctrl-c: xx packets transmitted, xx received, 0% packet loss, time xxxxms
+```
+### Use nslookup to get IP address
+```
+nslookup etf.bg.ac.rs
+nslookup facebook.com
+# Server:  xxx.xx.xxx.xx
+# Address:  xxx.xx.xxx.xx#xx
+# this is not IP address, it is your router
+
+# Non-authoritative answer:
+# Name: etf.bg.ac.rs
+# Address: xxx.xx.xxx.xx
+# this is IP address
+```
+### Use whois to get lots infor
+```
+whois etf.bg.ac.rs
+whois facebook.com
+# lots info: IP address, country, physical address, public infos
+# same as ipinfo.info website
+```
