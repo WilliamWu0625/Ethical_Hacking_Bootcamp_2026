@@ -75,6 +75,7 @@ ifconfig
 # inet xxx.xxx.x.xx  local ip address, communicate over internet and changable, where you are
 # ether xx:xx:xx:xx:xx:xx  mac address, unique to communicate with machines on network, who you are
 ```
+# Reconnaisance & Information Gathering
 ## Obtain IP Address, Physical Address Using Whois Tool
 ### Use ping to get IP address
 ```
@@ -105,4 +106,15 @@ whois etf.bg.ac.rs
 whois facebook.com
 # lots info: IP address, country, physical address, public infos
 # same as ipinfo.info website
+```
+## Whatweb Stealthy Scan
+```
+whatweb --help
+# -a (1 Stealthy default, 3 Aggressive, 4 Heavy)
+# EXAMPLE USAGE
+
+whatweb arh.bg.ac.rs -v
+# more readable
+# response, version, cookie, country, IP, tech stack, email ...
+# Detected Plugins
 ```
