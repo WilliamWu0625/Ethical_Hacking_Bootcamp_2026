@@ -118,3 +118,18 @@ whatweb arh.bg.ac.rs -v
 # response, version, cookie, country, IP, tech stack, email ...
 # Detected Plugins
 ```
+## Aggressive Website Technology Discovery on IP Range
+```
+ifconfig
+# inet, netmask
+
+whatweb 192.168.1.1-192.168.1.255 --aggression 3 -v
+# range of home network, including router IP, port 80 is HTTP port which is used to host pages
+# [ PasswordField ]
+
+whatweb 192.168.1.1-192.168.1.255 --aggression 3 -v --no-errors
+# exclude off line IP addresses
+
+whatweb 192.168.1.1-192.168.1.255 --aggression 3 -v --no-errors --log-verbose=results
+# save log to file results
+```
