@@ -133,3 +133,13 @@ whatweb 192.168.1.1-192.168.1.255 --aggression 3 -v --no-errors
 whatweb 192.168.1.1-192.168.1.255 --aggression 3 -v --no-errors --log-verbose=results
 # save log to file results
 ```
+## Gather Emails by theHarvester
+```
+theHarvester 
+theHarvester --help
+theHarvester -d mas.bg.ac.rs -b all
+theHarvester -d mas.bg.ac.rs -b google
+# -b source
+# -l limit, 500 default
+# this tool not always working, try again to see emails | hosts | ...
+```
