@@ -143,3 +143,15 @@ theHarvester -d mas.bg.ac.rs -b google
 # -l limit, 500 default
 # this tool not always working, try again to see emails | hosts | ...
 ```
+## How to Download Tools Online
+```
+git clone https://github.com/Tuhinshubhra/RED_HAWK
+cd RED_HAWK
+php rhawk.php
+# 'fix' to install the missing
+
+php rhawk.php
+> google.com
+> 2 (HTTPS)
+# 0 basic recon | 1 whois lookup | 2 geo-ip lookup | ...
+```
